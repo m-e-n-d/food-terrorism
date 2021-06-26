@@ -27,6 +27,7 @@ $ git clone https://github.com/m-e-n-d/food-terrorism.git
 ### iCanHazShortcutをインストールする
 * キーボードショートカットからshellコマンドを実行するアプリ:[iCanHazShortcut](https://github.com/deseven/icanhazshortcut)をインストールする。
 * 下記を例に、`Workdir`にcloneしたプロジェクトフォルダを設定する。
+![スクリーンショット 2021-06-26 16 44 28](https://user-images.githubusercontent.com/36587118/123507052-568c1880-d6a2-11eb-8186-92e841141430.png)
 
 
 ### Arduino Leonardoにスケッチを書き込む
@@ -35,6 +36,8 @@ $ git clone https://github.com/m-e-n-d/food-terrorism.git
 
 ### 画像の表示
 * ランダムで選ばれた食べ物でgoogle画像検索をした結果が表示される。
+![result-sample](https://user-images.githubusercontent.com/36587118/123507569-1da17300-d6a5-11eb-8403-7f1c14257bc5.jpg)
+
 
 ## 動作確認
 ### スクリプトの動作確認
