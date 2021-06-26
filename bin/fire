@@ -1,0 +1,23 @@
+#!/bin/bash
+
+function urlencode {
+  echo "$1" | nkf -WwMQ | sed 's/=$//g' | tr = % | tr -d '\n'
+}
+
+readonly WORD_ARRAY=(
+  "焼肉"
+  "ラーメン"
+  "唐揚げ"
+  "スイーツ"
+  "寿司"
+  "海鮮丼"
+  "天丼"
+  "ハンバーグ"
+)
+
+SEARCH_WORD=${WORD_ARRAY[$(($RANDOM % ${#WORD_ARRAY[*]}))]}
+
+ENCODED_SEARCH_WORD=$(urlencode "$SEARCH_WORD")
+
+open "https://www.google.com/search?q=${ENCODED_SEARCH_WORD}&tbm=isch"
+

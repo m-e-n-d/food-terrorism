@@ -1,0 +1,24 @@
+//////////////////////
+//動作確認用スケッチ
+//////////////////////
+#include <Keyboard.h>
+
+#define ButtonPin 9
+
+void setup()
+{
+  Keyboard.begin();
+  pinMode(ButtonPin, INPUT_PULLUP);
+}
+
+void loop()
+{
+  if (digitalRead(ButtonPin) == LOW)
+  {
+    Keyboard.print("PUSH!");
+    delay(100);
+
+    while (digitalRead(ButtonPin) == LOW);
+  }
+  delay(100);
+}
