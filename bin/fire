@@ -13,6 +13,12 @@ readonly WORD_ARRAY=(
   "海鮮丼"
   "天丼"
   "ハンバーグ"
+  "すき焼き"
+  "たこ焼き"
+  "バーベキュー"
+  "ハンバーガー"
+  "鶏白湯"
+  "麻婆豆腐"
 )
 
 SEARCH_WORD=${WORD_ARRAY[$(($RANDOM % ${#WORD_ARRAY[*]}))]}
