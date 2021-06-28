@@ -5,6 +5,7 @@ function urlencode {
 }
 
 readonly WORD_ARRAY=(
+  "サラダ"
   "焼肉"
   "ラーメン"
   "唐揚げ"
